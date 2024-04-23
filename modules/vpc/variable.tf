@@ -1,0 +1,12 @@
+variable "vpc_cidr" {}
+variable "vpc_name" {}
+variable "IGW_name" {}
+variable "key_name" {}
+variable "azs" {}
+variable "public_subnet" {}
+variable "private_subnet" {}
+variable "public_cidrs" {}
+variable "private_cidrs" {}
+variable Main_Routing_Table {}
+variable public_Routing_Table {}
+variable "environment" {}
