@@ -14,3 +14,14 @@ output "private-testsubnetid" {
 output "testsgid" {
     value = "${module.devops-testvpc.sgid}"
 }
+output "env" {
+    value = "${module.devopstest-testvpc.env}"
+}
+
+output "rolename" {
+    value = "${module.prod_iam.rolename}"
+}
+
+output "instance_profile" {
+    value = "${module.prod_iam.iam_instance_profile}"
+}

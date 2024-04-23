@@ -32,6 +32,7 @@ module "devopstest-testec2" {
     imagename = "ami-o13f17f36f8b1fefb"
     instance_type = "t2.micro"
     key_name = "vpc-1"
+    iam_instance_profile = "${module.prod_iam.instance_profile}"
     machinecount = "${module.devopstest-testvpc.env == "prod"  ? 3 : 1 }"
     sgid = "${module.devopstest-testvpc.sgid}"
     vpcname = "${module.devopstest-testvpc.vpcname }"
